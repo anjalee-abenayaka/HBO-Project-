@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CF9E31F23D1D83000450EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9E31E23D1D83000450EA7 /* AppDelegate.swift */; };
+		3CF9E32123D1D83000450EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9E32023D1D83000450EA7 /* ViewController.swift */; };
+		3CF9E32423D1D83000450EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9E32223D1D83000450EA7 /* Main.storyboard */; };
+		3CF9E32723D1D83000450EA7 /* HBO_Project_nibm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9E32523D1D83000450EA7 /* HBO_Project_nibm.xcdatamodeld */; };
+		3CF9E32923D1D83200450EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9E32823D1D83200450EA7 /* Assets.xcassets */; };
+		3CF9E32C23D1D83200450EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9E32A23D1D83200450EA7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CF9E31B23D1D83000450EA7 /* HBO Project nibm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HBO Project nibm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF9E31E23D1D83000450EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CF9E32023D1D83000450EA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CF9E32323D1D83000450EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CF9E32623D1D83000450EA7 /* HBO_Project_nibm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HBO_Project_nibm.xcdatamodel; sourceTree = "<group>"; };
+		3CF9E32823D1D83200450EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CF9E32B23D1D83200450EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CF9E32D23D1D83200450EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CF9E31823D1D83000450EA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CF9E31223D1D83000450EA7 = {
+			isa = PBXGroup;
+			children = (
+				3CF9E31D23D1D83000450EA7 /* HBO Project nibm */,
+				3CF9E31C23D1D83000450EA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CF9E31C23D1D83000450EA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9E31B23D1D83000450EA7 /* HBO Project nibm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF9E31D23D1D83000450EA7 /* HBO Project nibm */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9E31E23D1D83000450EA7 /* AppDelegate.swift */,
+				3CF9E32023D1D83000450EA7 /* ViewController.swift */,
+				3CF9E32223D1D83000450EA7 /* Main.storyboard */,
+				3CF9E32823D1D83200450EA7 /* Assets.xcassets */,
+				3CF9E32A23D1D83200450EA7 /* LaunchScreen.storyboard */,
+				3CF9E32D23D1D83200450EA7 /* Info.plist */,
+				3CF9E32523D1D83000450EA7 /* HBO_Project_nibm.xcdatamodeld */,
+			);
+			path = "HBO Project nibm";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CF9E31A23D1D83000450EA7 /* HBO Project nibm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF9E33023D1D83200450EA7 /* Build configuration list for PBXNativeTarget "HBO Project nibm" */;
+			buildPhases = (
+				3CF9E31723D1D83000450EA7 /* Sources */,
+				3CF9E31823D1D83000450EA7 /* Frameworks */,
+				3CF9E31923D1D83000450EA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HBO Project nibm";
+			productName = "HBO Project nibm";
+			productReference = 3CF9E31B23D1D83000450EA7 /* HBO Project nibm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CF9E31323D1D83000450EA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Anjalee Abenayaka";
+				TargetAttributes = {
+					3CF9E31A23D1D83000450EA7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 3CF9E31623D1D83000450EA7 /* Build configuration list for PBXProject "HBO Project nibm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CF9E31223D1D83000450EA7;
+			productRefGroup = 3CF9E31C23D1D83000450EA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CF9E31A23D1D83000450EA7 /* HBO Project nibm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CF9E31923D1D83000450EA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF9E32C23D1D83200450EA7 /* LaunchScreen.storyboard in Resources */,
+				3CF9E32923D1D83200450EA7 /* Assets.xcassets in Resources */,
+				3CF9E32423D1D83000450EA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CF9E31723D1D83000450EA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF9E32723D1D83000450EA7 /* HBO_Project_nibm.xcdatamodeld in Sources */,
+				3CF9E32123D1D83000450EA7 /* ViewController.swift in Sources */,
+				3CF9E31F23D1D83000450EA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CF9E32223D1D83000450EA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF9E32323D1D83000450EA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CF9E32A23D1D83200450EA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF9E32B23D1D83200450EA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CF9E32E23D1D83200450EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CF9E32F23D1D83200450EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CF9E33123D1D83200450EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KXV8X84Q6;
+				INFOPLIST_FILE = "HBO Project nibm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anjalee.HBO-Project-nibm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CF9E33223D1D83200450EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KXV8X84Q6;
+				INFOPLIST_FILE = "HBO Project nibm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anjalee.HBO-Project-nibm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CF9E31623D1D83000450EA7 /* Build configuration list for PBXProject "HBO Project nibm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF9E32E23D1D83200450EA7 /* Debug */,
+				3CF9E32F23D1D83200450EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF9E33023D1D83200450EA7 /* Build configuration list for PBXNativeTarget "HBO Project nibm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF9E33123D1D83200450EA7 /* Debug */,
+				3CF9E33223D1D83200450EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3CF9E32523D1D83000450EA7 /* HBO_Project_nibm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CF9E32623D1D83000450EA7 /* HBO_Project_nibm.xcdatamodel */,
+			);
+			currentVersion = 3CF9E32623D1D83000450EA7 /* HBO_Project_nibm.xcdatamodel */;
+			path = HBO_Project_nibm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3CF9E31323D1D83000450EA7 /* Project object */;
+}
