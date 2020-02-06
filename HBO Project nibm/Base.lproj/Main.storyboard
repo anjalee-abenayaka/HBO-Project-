@@ -1,24 +1,476 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W19-S0-DIC">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--REGISTER FOR NOW HBO NOW-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UIRegisterViewController" customModule="HBO_Project_nibm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HBOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-Hj-Til">
+                                <rect key="frame" x="109" y="103" width="209" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="QZC-IK-gQx"/>
+                                    <constraint firstAttribute="height" constant="83" id="Wlq-SN-ZUo"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W8i-Zb-C29">
+                                <rect key="frame" x="20" y="267" width="190" height="54"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="292-q8-jq9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="G05-Vo-A1R"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4gN-MO-7on">
+                                <rect key="frame" x="20" y="322" width="374" height="54"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="BiI-GW-OEW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="vB2-5I-llo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq2-bL-Y2m" customClass="CheckBoxButton" customModule="HBO_Project_nibm" customModuleProvider="target">
+                                <rect key="frame" x="20" y="627" width="27" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8lP-yD-58W"/>
+                                    <constraint firstAttribute="width" constant="27" id="qCV-LX-dei"/>
+                                </constraints>
+                                <state key="normal" image="Unchecked">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your information below. Your email address and password will become part of your HBO Now profile" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9T-A3-kUa">
+                                <rect key="frame" x="20" y="194" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="SPo-tP-j7n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="tYu-1i-fcw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-5Q-vWJ">
+                                <rect key="frame" x="210" y="267" width="184" height="54"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Vmb-MB-6RA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="sal-5E-8Oh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password must be at least 8 characters along, and combine letters with letters with numerals and/or special characters" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z81-CC-LZJ">
+                                <rect key="frame" x="10" y="391" width="394" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="394" id="3YX-OR-utS"/>
+                                    <constraint firstAttribute="height" constant="45" id="yA3-XC-m0h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saF-96-VTI">
+                                <rect key="frame" x="20" y="501" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="GrZ-ce-mSG"/>
+                                    <constraint firstAttribute="height" constant="50" id="YnF-Kb-hNc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-VF-JAc">
+                                <rect key="frame" x="20" y="561" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ybr-LK-wxH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="uqC-JT-Gtn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Checking this box. you agree to HBO Terms and Conditions and HBO Privacy Policy" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-CH-sFF">
+                                <rect key="frame" x="55" y="622" width="329" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="guo-EC-u10"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="329" id="vpj-dH-sxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an HBO NOW account ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rb3-gk-72q">
+                                <rect key="frame" x="20" y="798" width="241" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="btQ-f8-gnh"/>
+                                    <constraint firstAttribute="height" constant="17" id="uQ9-TX-XI5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ1-7I-3Ev">
+                                <rect key="frame" x="271" y="791" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="5Tx-rD-FUJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wkj-eV-l6V"/>
+                                </constraints>
+                                <state key="normal" title="Sign-in"/>
+                                <connections>
+                                    <segue destination="3BG-9i-hO8" kind="show" id="FDB-XV-0GB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A4-nK-GYh" customClass="BtnStyles" customModule="HBO_Project_nibm" customModuleProvider="target">
+                                <rect key="frame" x="20" y="704" width="374" height="49"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="EDr-yD-783"/>
+                                    <constraint firstAttribute="height" constant="49" id="LHe-SR-QYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Register for HBO NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPa-MP-miZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-0o-7M2">
+                                <rect key="frame" x="20" y="447" width="374" height="52"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="0Sg-3D-ryV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="0ti-yW-Zgz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4m7-5Q-vWJ" secondAttribute="trailing" constant="20" id="1Qu-Hn-Fa9"/>
+                            <constraint firstItem="4gN-MO-7on" firstAttribute="top" secondItem="W8i-Zb-C29" secondAttribute="bottom" constant="1" id="1fV-dB-Ebo"/>
+                            <constraint firstItem="TXr-0o-7M2" firstAttribute="top" secondItem="z81-CC-LZJ" secondAttribute="bottom" constant="11" id="4Wf-1Q-dWN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4gN-MO-7on" secondAttribute="trailing" constant="20" id="58c-GS-wh6"/>
+                            <constraint firstItem="W8i-Zb-C29" firstAttribute="top" secondItem="h9T-A3-kUa" secondAttribute="bottom" constant="16" id="9Ov-YL-8Ua"/>
+                            <constraint firstItem="h9T-A3-kUa" firstAttribute="top" secondItem="e6p-Hj-Til" secondAttribute="bottom" constant="8" id="Fst-jX-vBi"/>
+                            <constraint firstItem="h9T-A3-kUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ghf-13-9UR"/>
+                            <constraint firstItem="rJ1-7I-3Ev" firstAttribute="top" secondItem="7A4-nK-GYh" secondAttribute="bottom" constant="38" id="Gj0-OT-jWs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z81-CC-LZJ" secondAttribute="trailing" constant="10" id="IcC-cU-tWY"/>
+                            <constraint firstItem="saF-96-VTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="If5-HA-EpA"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="leading" secondItem="W8i-Zb-C29" secondAttribute="trailing" id="JXX-Ok-iWe"/>
+                            <constraint firstItem="e6p-Hj-Til" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Ka1-EV-3Lk"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="trailing" secondItem="4gN-MO-7on" secondAttribute="trailing" id="KuZ-1e-cYi"/>
+                            <constraint firstItem="rb3-gk-72q" firstAttribute="top" secondItem="7A4-nK-GYh" secondAttribute="bottom" constant="45" id="MPW-R1-shd"/>
+                            <constraint firstItem="z81-CC-LZJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Mxb-hI-UOz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rJ1-7I-3Ev" secondAttribute="trailing" constant="93" id="NJR-A5-VID"/>
+                            <constraint firstItem="Wq2-bL-Y2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OBQ-rp-qpL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7A4-nK-GYh" secondAttribute="trailing" constant="20" id="OX2-A2-OsM"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="top" secondItem="h9T-A3-kUa" secondAttribute="bottom" constant="16" id="PSa-eg-pUd"/>
+                            <constraint firstItem="TXr-0o-7M2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R1p-o7-rfs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e6p-Hj-Til" secondAttribute="trailing" constant="96" id="R35-5q-CL2"/>
+                            <constraint firstItem="Wq2-bL-Y2m" firstAttribute="top" secondItem="8UR-VF-JAc" secondAttribute="bottom" constant="16" id="RYO-Ye-xCG"/>
+                            <constraint firstItem="7A4-nK-GYh" firstAttribute="top" secondItem="LAr-CH-sFF" secondAttribute="bottom" constant="41" id="RfX-Rt-twn"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="leading" secondItem="W8i-Zb-C29" secondAttribute="trailing" id="S81-fa-EFs"/>
+                            <constraint firstItem="rJ1-7I-3Ev" firstAttribute="leading" secondItem="rb3-gk-72q" secondAttribute="trailing" constant="10" id="Vfj-hL-BCp"/>
+                            <constraint firstItem="7A4-nK-GYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y45-Kd-MoV"/>
+                            <constraint firstItem="4gN-MO-7on" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yjg-iP-klK"/>
+                            <constraint firstItem="z81-CC-LZJ" firstAttribute="top" secondItem="4gN-MO-7on" secondAttribute="bottom" constant="15" id="ZrV-ee-0cW"/>
+                            <constraint firstItem="LAr-CH-sFF" firstAttribute="leading" secondItem="Wq2-bL-Y2m" secondAttribute="trailing" constant="8" id="ai8-0i-t8R"/>
+                            <constraint firstItem="saF-96-VTI" firstAttribute="top" secondItem="TXr-0o-7M2" secondAttribute="bottom" constant="2" id="bKk-Z8-Txd"/>
+                            <constraint firstItem="e6p-Hj-Til" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="dry-r9-Ea3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="saF-96-VTI" secondAttribute="trailing" constant="20" id="fQF-hb-sSf"/>
+                            <constraint firstItem="W8i-Zb-C29" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fjd-Oa-scL"/>
+                            <constraint firstItem="rb3-gk-72q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gU9-Gz-8b9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TXr-0o-7M2" secondAttribute="trailing" constant="20" id="hUk-nK-A3I"/>
+                            <constraint firstItem="8UR-VF-JAc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iSQ-il-7DA"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="bottom" secondItem="W8i-Zb-C29" secondAttribute="bottom" id="ksD-Ou-jMe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LAr-CH-sFF" secondAttribute="trailing" constant="30" id="lGk-vo-Zlw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9T-A3-kUa" secondAttribute="trailing" constant="20" id="nIG-jn-aQI"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="trailing" secondItem="h9T-A3-kUa" secondAttribute="trailing" id="rjG-6z-5Ua"/>
+                            <constraint firstItem="8UR-VF-JAc" firstAttribute="top" secondItem="saF-96-VTI" secondAttribute="bottom" constant="10" id="syD-U3-ij7"/>
+                            <constraint firstItem="LAr-CH-sFF" firstAttribute="top" secondItem="8UR-VF-JAc" secondAttribute="bottom" constant="11" id="tLY-ye-ol7"/>
+                            <constraint firstItem="4gN-MO-7on" firstAttribute="top" secondItem="4m7-5Q-vWJ" secondAttribute="bottom" constant="1" id="vEl-hW-XE4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8UR-VF-JAc" secondAttribute="trailing" constant="20" id="xec-n4-OVN"/>
+                            <constraint firstItem="4m7-5Q-vWJ" firstAttribute="baseline" secondItem="W8i-Zb-C29" secondAttribute="baseline" id="yTL-UQ-kYY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="REGISTER FOR NOW HBO NOW" id="y6c-Eb-svT"/>
+                    <connections>
+                        <outlet property="txtCpass" destination="saF-96-VTI" id="2Vr-mh-a6w"/>
+                        <outlet property="txtEmail" destination="4gN-MO-7on" id="8VZ-KI-6qb"/>
+                        <outlet property="txtFName" destination="W8i-Zb-C29" id="SoU-ek-dPb"/>
+                        <outlet property="txtLName" destination="4m7-5Q-vWJ" id="Set-9F-46P"/>
+                        <outlet property="txtPassword" destination="TXr-0o-7M2" id="5uc-7e-E0f"/>
+                        <outlet property="txtZip" destination="8UR-VF-JAc" id="9jp-WB-Kzd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="54" y="119"/>
+        </scene>
+        <!--SIGN IN-->
+        <scene sceneID="L7q-3w-4TM">
+            <objects>
+                <viewController id="3BG-9i-hO8" customClass="UILoginViewController" customModule="HBO_Project_nibm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9jt-AC-ThK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HBOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="arD-g4-QTn">
+                                <rect key="frame" x="100" y="150" width="240" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ZES-yI-4yE"/>
+                                    <constraint firstAttribute="height" constant="97" id="jUn-8U-4c8"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwT-p6-b5D">
+                                <rect key="frame" x="20" y="276" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="hll-ch-6Gk"/>
+                                    <constraint firstAttribute="height" constant="60" id="z6c-oc-mqq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4H-zk-T9q">
+                                <rect key="frame" x="20" y="341" width="374" height="65"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="iFD-TP-o7B"/>
+                                    <constraint firstAttribute="height" constant="65" id="sAZ-kD-wfR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onk-sa-yUX" customClass="BtnStyles" customModule="HBO_Project_nibm" customModuleProvider="target">
+                                <rect key="frame" x="20" y="428" width="374" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="aYu-tT-AZM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="zTi-Mh-yRh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="3BG-9i-hO8" eventType="touchUpInside" id="Oow-JP-uJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ES0-M9-ccG">
+                                <rect key="frame" x="157" y="524" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="WT8-bu-8NR"/>
+                                    <constraint firstAttribute="height" constant="30" id="qxU-qY-XMb"/>
+                                </constraints>
+                                <state key="normal" title="Forgot Password ?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other provider Link: your new subscription" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toz-3Z-mFI">
+                                <rect key="frame" x="20" y="727" width="374" height="72"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Zob-sJ-4f1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Onk-sa-yUX" firstAttribute="leading" secondItem="ErK-Fg-XEP" secondAttribute="leading" constant="20" id="1Nn-Gc-Oim"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="bottom" secondItem="toz-3Z-mFI" secondAttribute="bottom" constant="63" id="2ry-uk-FEI"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="trailing" secondItem="Onk-sa-yUX" secondAttribute="trailing" constant="20" id="5tc-Bf-qhR"/>
+                            <constraint firstItem="Onk-sa-yUX" firstAttribute="top" secondItem="M4H-zk-T9q" secondAttribute="bottom" constant="22" id="84t-Gi-yXO"/>
+                            <constraint firstItem="fwT-p6-b5D" firstAttribute="top" secondItem="arD-g4-QTn" secondAttribute="bottom" constant="29" id="8JU-02-F55"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="trailing" secondItem="M4H-zk-T9q" secondAttribute="trailing" constant="20" id="Dy8-Ds-a6b"/>
+                            <constraint firstItem="fwT-p6-b5D" firstAttribute="leading" secondItem="ErK-Fg-XEP" secondAttribute="leading" constant="20" id="OpD-LW-CCx"/>
+                            <constraint firstItem="M4H-zk-T9q" firstAttribute="leading" secondItem="ErK-Fg-XEP" secondAttribute="leading" constant="20" id="PEl-kZ-sRK"/>
+                            <constraint firstItem="M4H-zk-T9q" firstAttribute="top" secondItem="fwT-p6-b5D" secondAttribute="bottom" constant="5" id="Xl8-mT-eRr"/>
+                            <constraint firstItem="toz-3Z-mFI" firstAttribute="leading" secondItem="Onk-sa-yUX" secondAttribute="leading" id="bUC-As-KcU"/>
+                            <constraint firstItem="ES0-M9-ccG" firstAttribute="leading" secondItem="ErK-Fg-XEP" secondAttribute="leading" constant="157" id="bop-cW-Tg0"/>
+                            <constraint firstItem="arD-g4-QTn" firstAttribute="leading" secondItem="ErK-Fg-XEP" secondAttribute="leading" constant="100" id="cxR-GJ-W1Z"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="trailing" secondItem="arD-g4-QTn" secondAttribute="trailing" constant="74" id="ehd-3B-OAx"/>
+                            <constraint firstItem="toz-3Z-mFI" firstAttribute="trailing" secondItem="Onk-sa-yUX" secondAttribute="trailing" id="lbh-SC-kHD"/>
+                            <constraint firstItem="ES0-M9-ccG" firstAttribute="top" secondItem="Onk-sa-yUX" secondAttribute="bottom" constant="27" id="t1c-rL-aam"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="trailing" secondItem="fwT-p6-b5D" secondAttribute="trailing" constant="20" id="t7c-jv-JQf"/>
+                            <constraint firstItem="arD-g4-QTn" firstAttribute="top" secondItem="ErK-Fg-XEP" secondAttribute="top" constant="62" id="u3M-cm-OlM"/>
+                            <constraint firstItem="ErK-Fg-XEP" firstAttribute="trailing" secondItem="ES0-M9-ccG" secondAttribute="trailing" constant="130" id="wwX-yH-T5o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ErK-Fg-XEP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SIGN IN" id="nKs-3G-n1x"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="fwT-p6-b5D" id="fsk-3W-pGi"/>
+                        <outlet property="txtPass" destination="M4H-zk-T9q" id="cP1-Rd-cBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lb-h7-J1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="119"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="3SB-vC-Ukf">
+            <objects>
+                <viewController restorationIdentifier="DashboardViewController" storyboardIdentifier="DashboardViewController" id="yyi-XJ-MNX" userLabel="Dashboard" customClass="DashboardViewController" customModule="HBO_Project_nibm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7w-gG-PH9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88K-VF-kl5">
+                                <rect key="frame" x="320" y="74" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qur-Q8-RWY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="pg5-OF-pFR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JK0-Lt-cmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Aad-7g-LKj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W19-S0-DIC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oF7-PC-zOs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aiU-3I-L3i" kind="relationship" relationship="rootViewController" id="SJP-gu-pwx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMd-DI-qDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="-17"/>
+        </scene>
+        <!--Get Started HBO now-->
+        <scene sceneID="Kdh-Mz-4qF">
+            <objects>
+                <viewController id="aiU-3I-L3i" userLabel="Get Started HBO now" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8FV-GN-8kO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u35-yq-tQh">
+                                <rect key="frame" x="32" y="257" width="374" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="inm-fs-4kf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="nfj-8r-05o"/>
+                                </constraints>
+                                <string key="text">With HBO NOW®, enjoy instant and unlimited access
+ to every episode of every season of the best
+ HBO shows, movies, comedy, sports, and documentaries.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-97-Sao">
+                                <rect key="frame" x="0.0" y="337" width="414" height="344.00000000000011"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="cip-Bv-hup"/>
+                                    <constraint firstAttribute="height" constant="344" id="nH1-YN-lET"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS8-gB-lHz">
+                                <rect key="frame" x="32" y="737" width="350" height="51"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="80U-yD-QIn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="X8Z-iX-M7v"/>
+                                </constraints>
+                                <state key="normal" title="Register HBO Now">
+                                    <color key="titleColor" red="0.0" green="0.42667111814796632" blue="0.72757376269035534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yqY-FH-khF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcF-rB-a9o">
+                                <rect key="frame" x="32" y="796" width="350" height="49"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Krk-2Z-er7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="w4C-ui-yer"/>
+                                </constraints>
+                                <state key="normal" title="Sign In HBO">
+                                    <color key="titleColor" red="0.0" green="0.44262491789448499" blue="0.75477871192893398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3BG-9i-hO8" kind="show" id="OiX-u0-HSo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HBOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="A3O-cR-YXi">
+                                <rect key="frame" x="99" y="119" width="240" height="94"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vdx-KD-Fwb" firstAttribute="trailing" secondItem="u35-yq-tQh" secondAttribute="trailing" constant="8" id="4yD-qj-Q69"/>
+                            <constraint firstItem="u35-yq-tQh" firstAttribute="top" secondItem="A3O-cR-YXi" secondAttribute="bottom" constant="44" id="5Dt-al-P1h"/>
+                            <constraint firstItem="XDd-97-Sao" firstAttribute="top" secondItem="u35-yq-tQh" secondAttribute="bottom" constant="8" id="9I4-wi-Ie6"/>
+                            <constraint firstItem="dS8-gB-lHz" firstAttribute="leading" secondItem="Vdx-KD-Fwb" secondAttribute="leading" constant="32" id="EJ6-Au-WzE"/>
+                            <constraint firstItem="PcF-rB-a9o" firstAttribute="top" secondItem="dS8-gB-lHz" secondAttribute="bottom" constant="8" id="EmN-W1-w8A"/>
+                            <constraint firstItem="XDd-97-Sao" firstAttribute="leading" secondItem="8FV-GN-8kO" secondAttribute="leading" id="NNX-vw-gkl"/>
+                            <constraint firstItem="u35-yq-tQh" firstAttribute="leading" secondItem="Vdx-KD-Fwb" secondAttribute="leading" constant="32" id="NRP-AJ-1oV"/>
+                            <constraint firstItem="PcF-rB-a9o" firstAttribute="leading" secondItem="Vdx-KD-Fwb" secondAttribute="leading" constant="32" id="UYa-dY-Hjj"/>
+                            <constraint firstItem="A3O-cR-YXi" firstAttribute="centerX" secondItem="u35-yq-tQh" secondAttribute="centerX" id="V36-vQ-Mtt"/>
+                            <constraint firstItem="A3O-cR-YXi" firstAttribute="leading" secondItem="Vdx-KD-Fwb" secondAttribute="leading" constant="99" id="ZSg-gz-FG0"/>
+                            <constraint firstItem="dS8-gB-lHz" firstAttribute="top" secondItem="XDd-97-Sao" secondAttribute="bottom" constant="56" id="fjF-2K-VTA"/>
+                            <constraint firstItem="A3O-cR-YXi" firstAttribute="top" secondItem="Vdx-KD-Fwb" secondAttribute="top" constant="31" id="hGF-BB-lOH"/>
+                            <constraint firstItem="Vdx-KD-Fwb" firstAttribute="trailing" secondItem="dS8-gB-lHz" secondAttribute="trailing" constant="32" id="lSI-8Z-yep"/>
+                            <constraint firstItem="Vdx-KD-Fwb" firstAttribute="trailing" secondItem="PcF-rB-a9o" secondAttribute="trailing" constant="32" id="sYa-Br-aXD"/>
+                            <constraint firstItem="Vdx-KD-Fwb" firstAttribute="bottom" secondItem="PcF-rB-a9o" secondAttribute="bottom" constant="17" id="x5m-vB-CB4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vdx-KD-Fwb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Get Started HBO Now" id="hN2-ac-pc7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1a-uG-c8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-747"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HBOLogo" width="1039" height="262"/>
+        <image name="Unchecked" width="26" height="26"/>
+        <image name="movie" width="666" height="425"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OiX-u0-HSo"/>
+    </inferredMetricsTieBreakers>
 </document>

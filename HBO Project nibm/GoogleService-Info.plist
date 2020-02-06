@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>342130860191-dkk5kk0lj9gr6lgcehost46d9q82af4a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.342130860191-dkk5kk0lj9gr6lgcehost46d9q82af4a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYcfBZ9k2tMpyr3WIreO7_idnIwShjiEA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>342130860191</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Anjalee.HBO-Project-nibm</string>
+	<key>PROJECT_ID</key>
+	<string>ios-projects-135e8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-projects-135e8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:342130860191:ios:ed3c77dd51aac491f202aa</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-projects-135e8.firebaseio.com</string>
+</dict>
+</plist>
