@@ -7,24 +7,31 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class DashboardViewController: UIViewController {
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+   
+    @IBAction func FaceId(_ sender: Any) {
+        
+        let context:LAContext = LAContext()
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Message"){ (good, error) in
+                if good{
+                    print("Good")
+                } else{
+                    print("Try Again")
+                }
+            }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        }
     }
-    */
-
 }
