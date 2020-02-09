@@ -350,8 +350,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jx-uN-kGD">
-                                <rect key="frame" x="182" y="329" width="51" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jx-uN-kGD">
+                                <rect key="frame" x="182" y="329" width="88" height="30"/>
                                 <state key="normal" title="Face ID"/>
                                 <connections>
                                     <action selector="FaceId:" destination="yyi-XJ-MNX" eventType="touchUpInside" id="nbI-Ts-yKG"/>
@@ -360,7 +360,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7jx-uN-kGD" firstAttribute="centerX" secondItem="u7w-gG-PH9" secondAttribute="centerX" id="IIR-hY-JFJ"/>
+                            <constraint firstItem="7jx-uN-kGD" firstAttribute="centerX" secondItem="u7w-gG-PH9" secondAttribute="centerX" constant="19" id="IIR-hY-JFJ"/>
                             <constraint firstItem="7jx-uN-kGD" firstAttribute="top" secondItem="qur-Q8-RWY" secondAttribute="top" constant="285" id="hml-Ly-z1v"/>
                             <constraint firstItem="7jx-uN-kGD" firstAttribute="leading" secondItem="qur-Q8-RWY" secondAttribute="leading" constant="182" id="vzT-Lr-iOT"/>
                         </constraints>
